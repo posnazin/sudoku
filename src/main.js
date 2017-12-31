@@ -12,7 +12,9 @@ function generateTable(){
 
 
 	var table   = document.createElement("table");
+	table.className="sudoku";
 
+	
 	for(var i=0; i<9; i++){
 
 		var row=document.createElement("tr");
@@ -49,7 +51,7 @@ function generateTable(){
 }
 
 
-
+/*
 function iniSudoku (n){
 	sudoku [0][0]=8;sudoku [0][2]=9;sudoku [0][4]=7;sudoku [0][5]=5;sudoku [0][8]=1;
 	sudoku [1][2]=6;sudoku [1][6]=5;
@@ -78,3 +80,4 @@ function iniResult (n){
 
 }
 
+*/
