@@ -9,14 +9,16 @@ p {
 
 .cell input {
     display: inline-block;
-    float: left;
+    float: center;
+    background-color: #e8e8e8;
+    border-radius: 10px;
 
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
+    border-style: none;
 }
 
 .centered-table {
