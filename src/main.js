@@ -4,8 +4,9 @@ function main(){
 }
 
 var objecthtml;
-
-
+var sudoku;
+var result;
+var holes=0;
 
 function generateTable(){
 	objecthtml = document.getElementsByTagName("body")[0];
@@ -48,7 +49,12 @@ function generateTable(){
 
 }
 
-
+function calculateHoles(){
+	for(var i=0; i<9; i++)
+		for(var j=0; j<9; j++)
+			if(sudoku[i][j]=='.')
+				holes++;
+}
 
 function iniSudoku (n){
 	sudoku [0][0]=8;sudoku [0][2]=9;sudoku [0][4]=7;sudoku [0][5]=5;sudoku [0][8]=1;
