@@ -21,23 +21,33 @@ function generateTable(){
 
 			var cell=document.createElement("td");
 			cell.className="cell";
-			row.appendChild(cell);			
+			row.appendChild(cell);
+
+			/*if(sudoku[i][j]!='.'){			
+				cell.appendChild(sudoku[i][j]);
+			}*/
+
+			if((j+1)%3==0){
+				var div=document.createElement("div");
+				div.className="space-h";
+				row.appendChild(div);
+			}
 
 		}
+
 		table.appendChild(row);
+		if((i+1)%3==0){
+			var div=document.createElement("div");
+			div.className="space-v";
+			table.appendChild(div);
+		}
+
 	}
 
 	objecthtml.appendChild(table);
 
 }
 
-/*
-
-
-
-function main(){
-	generateTable();
-}
 
 
 function iniSudoku (n){
@@ -68,32 +78,3 @@ function iniResult (n){
 
 }
 
-
-
-function drawSudoku(){
-	objecthtml = document.getElementsByTagName("sudoku");
-}
-
-
-
-function generateTable(){
-	objecthtml = document.getElementsByTagName("sudoku");
-
-	var table   = document.createElement("table");
-
-	for(var i=0; i<8; i++){
-
-		var row=document.createElement("tr");
-
-		for (var i; i<8; i++){
-
-			var cell=document.createElement("td");
-			row.appendChild(cell);			
-
-		}
-		table.appendChild(row);
-	}
-
-	objecthtml.appendChild(table);
-
-}*/

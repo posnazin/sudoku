@@ -22,3 +22,11 @@ h1 {
     height: 50px;
     border-radius: 10px;
 }
+
+.space-h {
+	width: 5px;
+}
+
+.space-v {
+	height: 5px;
+}
