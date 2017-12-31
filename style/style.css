@@ -7,10 +7,32 @@ p {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 table {
 	margin-left: 28.5%;
 }
 
+=======
+h2 {
+    color: #ff6347;
+    text-align: center;
+    font-size: 30px;
+}
+
+button{
+    background-color: #cecdcd;
+    float: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 50%;
+    margin-left: 50%;
+
+}
+>>>>>>> 89f558e01606cf73d014a00abc222eeb57cb62c2
 .cell input {
     display: inline-block;
     float: center;
@@ -46,7 +68,10 @@ table {
 .space-v {
 	height: 5px;
 }
+<<<<<<< HEAD
 
 #sudoku{
 	width: 90%;
 }
+=======
+>>>>>>> 89f558e01606cf73d014a00abc222eeb57cb62c2
