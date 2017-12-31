@@ -1,4 +1,8 @@
 var sudoku[8][8];
+var objecthtml;
+var result[8][8];
+
+
 
 
 function main(){
@@ -27,4 +31,10 @@ function iniSudoku (n){
 	sudoku [0][0]=8;
 	sudoku [0][0]=8;
 
+}
+
+
+
+function drawSudoku(){
+	objecthtml = document.getElementsByTagName("sudoku");
 }
