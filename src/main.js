@@ -1,12 +1,42 @@
-var sudoku[8][8];
-var objecthtml;
-var result[8][8];
 
+function main(){
+	generateTable();
+}
+
+var objecthtml;
+
+
+
+function generateTable(){
+	objecthtml = document.getElementsByTagName("body")[0];
+
+
+	var table   = document.createElement("table");
+
+	for(var i=0; i<9; i++){
+
+		var row=document.createElement("tr");
+
+		for (var j=0; j<9; j++){
+
+			var cell=document.createElement("td");
+			cell.className="cell";
+			row.appendChild(cell);			
+
+		}
+		table.appendChild(row);
+	}
+
+	objecthtml.appendChild(table);
+
+}
+
+/*
 
 
 
 function main(){
-	iniSudoku (1);
+	generateTable();
 }
 
 
@@ -43,3 +73,27 @@ function iniResult (n){
 function drawSudoku(){
 	objecthtml = document.getElementsByTagName("sudoku");
 }
+
+
+
+function generateTable(){
+	objecthtml = document.getElementsByTagName("sudoku");
+
+	var table   = document.createElement("table");
+
+	for(var i=0; i<8; i++){
+
+		var row=document.createElement("tr");
+
+		for (var i; i<8; i++){
+
+			var cell=document.createElement("td");
+			row.appendChild(cell);			
+
+		}
+		table.appendChild(row);
+	}
+
+	objecthtml.appendChild(table);
+
+}*/
