@@ -71,7 +71,7 @@ function iniSudoku (n){
 	sudoku [5][0]='.';sudoku [5][1]='.';sudoku [5][2]=8;sudoku [5][3]='.';sudoku [5][4]=5;sudoku [5][5]='.';sudoku [5][6]='.';sudoku [5][7]='.';sudoku [5][8]=3;
 	sudoku [6][0]=7;sudoku [6][1]=9;sudoku [6][2]='.';sudoku [6][3]='.';sudoku [6][4]='.';sudoku [6][5]=3;sudoku [6][6]='.';sudoku [6][7]=8;sudoku [6][8]='.';
 	sudoku [7][0]='.';sudoku [7][1]='.';sudoku [7][2]=5;sudoku [7][3]='.';sudoku [7][4]='.';sudoku [7][5]='.';sudoku [7][6]=2;sudoku [7][7]='.';sudoku [7][8]='.';
-	sudoku [8][0]=4;sudoku [8][1]='.';sudoku [8][1]='.';sudoku [8][3]=9;sudoku [8][4]=2;sudoku [8][5]='.';sudoku [8][6]=7;sudoku [8][7]='.';sudoku [8][8]=6;
+	sudoku [8][0]=4;sudoku [8][1]='.';sudoku [8][2]='.';sudoku [8][3]=9;sudoku [8][4]=2;sudoku [8][5]='.';sudoku [8][6]=7;sudoku [8][7]='.';sudoku [8][8]=6;
 
 }
 
