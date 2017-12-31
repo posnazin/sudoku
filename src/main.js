@@ -11,7 +11,6 @@ var sudoku = [];
 sudoku.length=81;
 var result;
 var holes=0;
-var c=document.createElement("td");
 
 function generateTable(){
 	objecthtml = document.getElementsByTagName("body")[0];
@@ -35,6 +34,7 @@ function generateTable(){
 				cell.innerHTML=sudoku[i][j];
 			}else{
 				var input=document.createElement("input");
+				input.maxLength="1";
 				cell.appendChild(input);
 			}
 
@@ -88,13 +88,12 @@ function iniSudoku (){
 	sudoku [6][0]=7;  sudoku [6][1]=9;	sudoku [6][2]='.';sudoku [6][3]='.';sudoku [6][4]='.';sudoku [6][5]=3;  sudoku [6][6]='.';sudoku [6][7]=8;  sudoku [6][8]='.';
 	sudoku [7][0]='.';sudoku [7][1]='.';sudoku [7][2]=5;  sudoku [7][3]='.';sudoku [7][4]='.';sudoku [7][5]='.';sudoku [7][6]=2;  sudoku [7][7]='.';sudoku [7][8]='.';
 	sudoku [8][0]=4;  sudoku [8][1]='.';sudoku [8][2]='.';sudoku [8][3]=9;  sudoku [8][4]=2;  sudoku [8][5]='.';sudoku [8][6]=7;  sudoku [8][7]='.';sudoku [8][8]=6;
-	console.log(sudoku);
 
 }
 
 function iniResult (){
 
-	result=new Array(9);
+	result=new Array(10);
 
 
 	for (var i = 0; i < 9; i++) {
@@ -111,6 +110,6 @@ function iniResult (){
 	result [6][0]=7;result [6][1]=9;result [6][2]=2;result [6][3]=5;result [6][4]=6;result [6][5]=3;result [6][6]=1;result [6][7]=8;result [6][8]=4;
 	result [7][0]=1;result [7][1]=6;result [7][2]=5;result [7][3]=4;result [7][4]=8;result [7][5]=7;result [7][6]=2;result [7][7]=3;result [7][8]=9;
 	result [8][0]=4;result [8][1]=8;result [8][2]=3;result [8][3]=9;result [8][4]=2;result [8][5]=1;result [8][6]=7;result [8][7]=5;result [8][8]=6;
-
+	result [9]="Eres un hacker machine";
 }
 
