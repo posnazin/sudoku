@@ -58,8 +58,7 @@ function generateTable(){
 }
 
 
-/*
-=======
+
 function calculateHoles(){
 	for(var i=0; i<9; i++)
 		for(var j=0; j<9; j++)
@@ -67,7 +66,6 @@ function calculateHoles(){
 				holes++;
 }
 
->>>>>>> 694f9723a982d435d858f65ba37009e7f043ec3a
 function iniSudoku (n){
 	sudoku [0][0]=8;sudoku [0][1]='.';sudoku [0][2]=9;sudoku [0][3]='.';sudoku [0][4]=7;sudoku [0][5]=5;sudoku [0][6]='.';sudoku [0][7]='.';sudoku [0][8]=1;
 	sudoku [1][0]='.';sudoku [1][1]='.';sudoku [1][2]=6;sudoku [1][3]='.';sudoku [1][4]='.';sudoku [1][5]='.';sudoku [1][6]=5;sudoku [1][7]='.';sudoku [1][8]='.';
@@ -77,7 +75,7 @@ function iniSudoku (n){
 	sudoku [5][0]='.';sudoku [5][1]='.';sudoku [5][2]=8;sudoku [5][3]='.';sudoku [5][4]=5;sudoku [5][5]='.';sudoku [5][6]='.';sudoku [5][7]='.';sudoku [5][8]=3;
 	sudoku [6][0]=7;sudoku [6][1]=9;sudoku [6][2]='.';sudoku [6][3]='.';sudoku [6][4]='.';sudoku [6][5]=3;sudoku [6][6]='.';sudoku [6][7]=8;sudoku [6][8]='.';
 	sudoku [7][0]='.';sudoku [7][1]='.';sudoku [7][2]=5;sudoku [7][3]='.';sudoku [7][4]='.';sudoku [7][5]='.';sudoku [7][6]=2;sudoku [7][7]='.';sudoku [7][8]='.';
-	sudoku [8][0]=4;sudoku [8][1]='.';sudoku [8][1]='.';sudoku [8][3]=9;sudoku [8][4]=2;sudoku [8][5]='.';sudoku [8][6]=7;sudoku [8][7]='.';sudoku [8][8]=6;
+	sudoku [8][0]=4;sudoku [8][1]='.';sudoku [8][2]='.';sudoku [8][3]=9;sudoku [8][4]=2;sudoku [8][5]='.';sudoku [8][6]=7;sudoku [8][7]='.';sudoku [8][8]=6;
 
 }
 
@@ -96,4 +94,3 @@ function iniResult (n){
 
 }
 
-*/
