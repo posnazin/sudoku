@@ -7,6 +7,10 @@ p {
 	text-align: center;
 }
 
+table {
+	margin-left: 28.5%;
+}
+
 .cell input {
     display: inline-block;
     float: center;
@@ -43,3 +47,6 @@ p {
 	height: 5px;
 }
 
+#sudoku{
+	width: 90%;
+}
