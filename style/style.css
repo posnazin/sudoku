@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    overflow:hidden;
+    font-family: Arial;
+}
+
 h1 {
 	color: #ff6347;
 	text-align: center;
@@ -7,12 +13,10 @@ p {
 	text-align: center;
 }
 
-<<<<<<< HEAD
 table {
-	margin-left: 28.5%;
+	margin-left: 30.5%;
 }
 
-=======
 h2 {
     color: #ff6347;
     text-align: center;
@@ -32,13 +36,11 @@ button{
     margin-left: 50%;
 
 }
->>>>>>> 89f558e01606cf73d014a00abc222eeb57cb62c2
 .cell input {
     display: inline-block;
     float: center;
     background-color: #e8e8e8;
     border-radius: 10px;
-
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -68,10 +70,20 @@ button{
 .space-v {
 	height: 5px;
 }
-<<<<<<< HEAD
 
 #sudoku{
-	width: 90%;
+	height: 100%;
+	width: 100%;
 }
-=======
->>>>>>> 89f558e01606cf73d014a00abc222eeb57cb62c2
+
+footer {
+	background-color: #464545;
+	color:white;
+   	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	text-align: center;
+   	font-family: Arial;
+}
+
