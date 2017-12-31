@@ -4,6 +4,11 @@ function main(){
 	calculateHoles();
 	iniResult();
 	generateTable();
+	var inputs=document.getElementsByTagName("input").length;
+	for(var i=0; i<inputs; i++){
+		var input=document.getElementsByTagName("input")[i];
+		input.addEventListener("input", inn);
+	}
 }
 
 var objecthtml;
@@ -35,6 +40,7 @@ function generateTable(){
 			}else{
 				var input=document.createElement("input");
 				input.maxLength="1";
+				input.id=i+"_"+j;
 				cell.appendChild(input);
 			}
 
@@ -60,12 +66,33 @@ function generateTable(){
 }
 
 
+function inn(){
+	if(!checksudoku()){
+		if(0)
+		alert("¡Hay algún error! :( so sorry");
+	}else{
+		alert("¡Felicidades lo has conseguido, machine!");
+	}
+	
+}
 
 function calculateHoles(){
 	for(var i=0; i<9; i++)
 		for(var j=0; j<9; j++)
 			if(sudoku[i][j]=='.')
 				holes++;
+}
+
+function checksudoku(){
+	for(var i=0; i<9; i++){
+		for(var j=0; j<9; j++){
+			if(sudoku[i][j]!=result[i][j])
+				return false;
+		}
+	}
+
+	return true;
+
 }
 
 

@@ -38,15 +38,14 @@ button{
 }
 .cell input {
     display: inline-block;
-    float: center;
     background-color: #e8e8e8;
-    border-radius: 10px;
     width: 50px;
     height: 50px;
     border-radius: 10px;
     text-align: center;
     font-size: 22px;
     border-style: none;
+    caret-color: transparent;
 }
 
 .centered-table {
