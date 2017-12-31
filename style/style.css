@@ -1,5 +1,10 @@
 h1 {
 	color: #ff6347;
+	text-align: center;
+}
+
+p {
+	text-align: center;
 }
 
 .cell input {
@@ -14,7 +19,10 @@ h1 {
     font-size: 30px;
 }
 
-
+.centered-table {
+   margin-left: auto;
+   margin-right: auto;
+}
 
 .cell {
     background-color: #cecdcd;
@@ -32,3 +40,4 @@ h1 {
 .space-v {
 	height: 5px;
 }
+
